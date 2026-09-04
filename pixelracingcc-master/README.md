@@ -1,60 +1,47 @@
-Pixel Racing 
-==========================
-(fork of Javascript Pseudo 3D Racer) [play it!](https://angrybud.com/pixelracing)
+# AI Car Agent
 
-Updates:
-- touch controls added, for mobiles (see 'touch.js')
-- automatic canvas resizing, now fit for all screens
-- opens full window (side controls removed)
-- performance check removed for higher performance
-- works well in portrait layout 
-- demo car sprites updated (not they look straight)
-- some banners changed for 'better' ones
-- driving man moved to right as for right-side driving
-- and his passenger girl from the left
-- music removed (sound work in progress)
+An AI-powered autonomous racing car project focused on teaching an agent to navigate a racing environment and improve its driving performance.
 
-Retro Style 2D Racing Game
+## Overview
 
- * [latest playable version](https://angrybud.com/pixelracing)
- * view the [source](https://github.com/angrybuddy/pixelracingcc)
+This project explores artificial intelligence, autonomous driving, and machine learning through a simulated racing car.
 
-A note on performance
-=====================
+The AI agent learns to make driving decisions based on information from its environment, with the goal of completing tracks efficiently and improving over time.
 
-The performance of this game is device dependent. Though it works well in all 
-relevant browsers, especially with canvas acceleration, IE not much supported 
-yet it works with the game. On mobiles it works.
+## Features
 
-A note on code structure
-========================
+- Autonomous car control
+- AI-based decision making
+- Racing simulation
+- Machine learning experiments
+- Track navigation
+- Performance optimization
 
-We are keeping the very ide of the original code, so it is still: "In fact, in order to
-keep it simple to understand it embeds the javascript for each example directly in the HTML
-page (horror!) and, even worse, uses global variables and functions (OMG!)". In the updates 
-we've put touch.j separately yet most of changes are in the main files. Send a note if 
-you need some help about it.
+## Technologies
 
-Related Links
-=============
+- Python
+- Machine Learning
+- Reinforcement Learning
+- Computer Vision
+- Git and GitHub
 
- * [Lou's Pseudo-3d Page](http://www.extentofthejam.com/pseudo/) - high level how-to guide
- * [Racer 10k](https://github.com/onaluf/RacerJS) - another javascript racing game
+## Project Goals
 
-License
-=======
+1. Build an autonomous racing agent.
+2. Experiment with machine learning techniques.
+3. Improve driving performance through training.
+4. Learn more about AI and autonomous systems.
 
-[MIT](http://en.wikipedia.org/wiki/MIT_License) license. As of the original.
+## Future Improvements
 
->> THE STATUS inhereted from the original project: the sprite graphics are placeholder 
-graphics [borrowed](http://pixel.garoux.net/game/44) from the old genesis version of outrun 
-and used here to honor the great game of the past, and also for the purpose of education. 
+- Improve the training algorithm
+- Add more racing tracks
+- Improve track detection
+- Optimize driving performance
+- Experiment with more advanced AI models
 
-Roadmap
-=======
+## Author
 
-- add more than one track
-- replace pixel car graphics
-- main menu and settings screen
-- find sponsors for the banners
+**Krishay Chaddha**
 
+Interested in AI, robotics, software, and autonomous systems.
