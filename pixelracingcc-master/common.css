@@ -1,0 +1,47 @@
+::-webkit-scrollbar { display: none; }
+body { font-family: Arial, Helvetica, sans-serif; background-color: #321; margin: 0; overflow: hidden; }
+#racer { position: relative; z-index: 0; width: 100%; height: 100%; }
+#canvas { display: block; width: 100vw; height: 100vh; background-color: #72D7EE; }
+#hud { position: absolute; z-index: 1; width: 100%; padding: 5px 0; font-family: Verdana, Geneva, sans-serif; font-size: 1.5em; background-color: rgba(40,40,50,0.5); color: black; border-bottom: 2px solid black; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+#hud .hud { background-color: rgba(255,255,255,0.6); padding: 5px; border-radius: 5px; border: 1px solid black; margin: 0 5px; }
+#hud #speed { float: right; }
+#hud #current_lap_time { float: left; }
+#hud #last_lap_time { float: left; display: none; }
+#hud #fast_lap_time { display: block; width: 12em; margin: 0 auto; text-align: center; }
+#hud .value { color: black; font-weight: bold; }
+#hud .fastest { background-color: rgba(255,215,0,0.5); }
+
+/* Live chart overlay */
+#chart-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 320px;
+  height: 200px;
+  background: rgba(255,255,255,0.85);
+  border: 2px solid black;
+  border-radius: 8px;
+  z-index: 10;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.ai-toggle {
+  position: absolute;
+  right: 14px;
+  top: 6px;
+  z-index: 20;
+  pointer-events: auto;
+  border: 1px solid #7ad7ff;
+  background: rgba(10,19,28,0.8);
+  color: #dff6ff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font: bold 12px/1.2 Arial, sans-serif;
+  cursor: pointer;
+}
+.ai-toggle.on { background: rgba(30,121,72,0.9); border-color: #9ef4bc; box-shadow: 0 0 12px rgba(110,255,170,0.6); }
