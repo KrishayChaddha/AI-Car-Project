@@ -1,62 +1,24 @@
-# ?? AI Car Project
+# ðŸš— Autonomous AI Car Project
 
-An autonomous AI car project exploring machine learning, reinforcement learning, and intelligent driving.
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![ROS](https://img.shields.io/badge/ROS-Noetic%2FGalactic-orange.svg)](https://www.ros.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## ?? About
+An open-source autonomous vehicle navigation and perception system built using computer vision, machine learning, and embedded hardware.
 
-This project focuses on building an AI agent capable of controlling a racing car in a simulated environment.
+## ðŸš€ Features
 
-The agent learns from its environment and attempts to improve its driving performance through training and experimentation.
+- **Real-Time Perception**: Object and lane detection powered by custom-trained PyTorch models and OpenCV.
+- **Path Planning**: Dynamic obstacle avoidance and waypoint tracking using A* and behavior trees.
+- **Hardware Integration**: Precise steering and throttle actuation via PID controllers on microcontroller hardware.
+- **Telemetry & Logging**: Live system health monitoring and sensor data recording.
 
-## ?? AI Car Agent
+---
 
-The main AI component is located in the `AI-car-agent` folder.
-
-The agent is designed to experiment with:
-
-- Autonomous driving
-- Reinforcement learning
-- Machine learning
-- Track navigation
-- Steering and acceleration
-- Racing performance optimization
-
-## ?? Project Structure
+## ðŸ› ï¸ System Architecture
 
 ```text
-AI-agent/
-ÃÄÄ README.md
-ÀÄÄ AI-car-agent/
-    ÀÄÄ README.md
-```
-
-## ??? Technologies
-
-- Python
-- Machine Learning
-- Reinforcement Learning
-- Computer Vision
-- Git
-- GitHub
-
-## ?? Goals
-
-- Build an autonomous racing agent
-- Experiment with AI training techniques
-- Improve driving performance
-- Learn more about autonomous systems
-- Explore the connection between AI and robotics
-
-## ?? Future Plans
-
-- Improve the AI model
-- Add additional tracks
-- Improve training efficiency
-- Add better performance metrics
-- Experiment with more advanced reinforcement learning techniques
-
-## ????? Author
-
-**Krishay Chaddha**
-
-Interested in AI, robotics, computer engineering, and autonomous systems.
+[ Camera / LiDAR ] ---> [ Perception Node (PyTorch/OpenCV) ]
+                                    |
+                                    v
+[ Microcontroller ] <--- [ Control / PID ] <--- [ Path Planning (A*) ]
